@@ -91,7 +91,7 @@ def all_holidays_with_bbq(holiday_hash)
     newarray << newhash.keys
       end
 
-    newarray.reject!
+    newarray.reject!{|item| item.empty?}
 end
 
 
