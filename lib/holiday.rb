@@ -88,8 +88,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.select.keys {|name, supply|supply.include?("BBQ")}
 
       end
-    end
-  end
+
 
 end
 
