@@ -87,11 +87,11 @@ def all_holidays_with_bbq(holiday_hash)
   newhash = {}
   newarray = []
   holiday_hash.each do |season, holiday|
-    newhash = holiday.select {|name, supply|supply.include?("BBQ")}
-    newhash.keys
+    newhash[holiday] = holiday.select {|name, supply|supply.include?("BBQ")}
+
       end
 
-newarray
+    newhash.keys
 end
 
 
